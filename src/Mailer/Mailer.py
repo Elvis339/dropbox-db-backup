@@ -26,7 +26,7 @@ class Mailer():
             server = smtplib.SMTP_SSL('smtp.gmail.com', self.__port)
             server.ehlo()
             server.login(self.__email, self.__password)
-            server.sendmail(self.__email, 'elvissabanovic3@gmail.com', body)
+            server.sendmail(self.__email, 'mail@gmail.com', body)
             server.close()
         except Exception as e:
             raise e
